@@ -18,6 +18,7 @@ python3 -m venv myvenv
 ```
 
 We start our virtual environment running `myvenv\Scripts\activate`. Then, it is good practice to have a requirements file to list all the dependencies to be installed. The file will store information about all the libraries, modules, and packages that are used while developing our project.
+
 Create `requirements.txt` file and add `Django~=3.2.10` in the file. Then, the commands:
 ```
 python -m pip install --upgrade pip
@@ -25,4 +26,6 @@ pip install -r requirements.txt
 ```
 will make sure that we have the latest software `pip` to install libraries and we will have Django installed.
 
-Now we are in a position to start our Django application.
+Now we are in a position to start our Django project. Execute the command `django-admin.exe startproject currency_converter .` to start the Djago project. An app in Django is a subcomponent of the Django project. To start our currency app, execute `python manage.py startapp converter`. 
+
+At this point, we have created all files and directories needed for our project/application. Using a Code editor, we can modify the files to addapt our project/app to our needs.

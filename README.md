@@ -32,4 +32,4 @@ will make sure that we have the latest software `pip` to install libraries and w
 
 Now we are in a position to start our Django project. Execute the command `django-admin.exe startproject currency_converter .` to start the Djago project. An app in Django is a subcomponent of the Django project. To start our currency app, execute `python manage.py startapp converter`. 
 
-At this point, we have created all files and directories needed for our project/application. Using a Code editor, we can modify the files to addapt our project/app to our needs.
+At this point, we have created all files and directories needed for our project/application. Using a Code editor, we can modify the files to addapt our project/app to our particular needs.

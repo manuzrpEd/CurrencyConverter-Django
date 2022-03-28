@@ -16,4 +16,4 @@ mkdir currency
 cd currency
 python3 -m venv myvenv
 ```
-We start our virtual environment running `x = 4`{:.ruby}
+We start our virtual environment running `myvenv\Scripts\activate`.

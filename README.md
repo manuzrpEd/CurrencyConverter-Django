@@ -8,7 +8,7 @@ Using [Django](https://www.djangoproject.com/)'s Python web framework, I will ex
 
 My solution can be found in the following website: https://simplecurrency.onrender.com
 
-# Steps of my code solution
+# Steps of my code solution - Django framework
 
 ### Virtual environment ###
 

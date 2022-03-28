@@ -23,4 +23,5 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 will make sure that we have the latest software `pip` to install libraries and we will have Django installed.
+
 Now we are in a position to start our Django application.

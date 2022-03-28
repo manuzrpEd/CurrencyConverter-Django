@@ -10,9 +10,10 @@ My solution can be found in the following website: https://simplecurrency.onrend
 
 # Steps of my code solution
 
-On Windows 11, open the command prompt and move to a directory where we will create our virtual environment (a bunch of directories and files). We create the folder, navigate into the folder and create the virtual environment in the following way:
+On Windows 11, open the command prompt and move to a directory where we will create our virtual environment. A virtual environment is a tool that helps to keep the dependencies required by this project separate from other. We create a folder for our project, navigate into the folder and create the virtual environment in the following way:
 ```
 mkdir currency
 cd currency
 python3 -m venv myvenv
 ```
+We start our virtual environment running `x = 4`{:.ruby}

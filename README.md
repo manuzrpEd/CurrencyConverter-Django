@@ -10,6 +10,8 @@ My solution can be found in the following website: https://simplecurrency.onrend
 
 # Steps of my code solution
 
+### Virtual environment ###
+
 On Windows 11, open the command prompt and move to a directory where we will create our virtual environment. A virtual environment is a tool that helps to keep the dependencies required by this project separate from other. We create a folder for our project, navigate into the folder and create the virtual environment in the following way:
 ```
 mkdir currency
@@ -25,6 +27,8 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 will make sure that we have the latest software `pip` to install libraries and we will have Django installed.
+
+### Django project/app ###
 
 Now we are in a position to start our Django project. Execute the command `django-admin.exe startproject currency_converter .` to start the Djago project. An app in Django is a subcomponent of the Django project. To start our currency app, execute `python manage.py startapp converter`. 
 

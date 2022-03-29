@@ -3,7 +3,7 @@ import requests,time
 
 url='http://api.currencylayer.com/'
 # key=str(os.getenv('API_KEY'))
-key='6c50234f11b23904b97cd52b2236673f'
+key='397f83396edea6f54769083b82135353'
 
 # Create your views here.
 

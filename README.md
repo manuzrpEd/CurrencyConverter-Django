@@ -110,4 +110,6 @@ urlpatterns = [
 ```
 12. Add a `.gitignore` file in the base of the directory
 13. Execute `python manage.py migrate`
-14. Run `python manage.py runserver` and now we should be able to go to `http://127.0.0.1:8000/` to view the site.
+14. Run `python manage.py runserver` and now we should be able to go to `http://127.0.0.1:8000/` to view the site locally.
+
+### Deploy ###

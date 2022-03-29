@@ -64,14 +64,9 @@ def index(request):
             result="Error. Please enter numerical values only."
             time.sleep(2)
 
-        # response = requests.get(f"{url}/convert?access_key={key}&from={currency1}&to={currency2}&amount={amount}")
         response = requests.get(f"{url}/live?access_key={key}")
 
         # response data convterted to json
-        # data = response.json()
-        # rate = data['info']['quote']
-        # amt = data['result']
-        # context = {"rate": rate, 'amount': amt}
         data = response.json()
         quotes = data['quotes']
 
@@ -96,4 +91,8 @@ def index(request):
         return render(request, template, context)
     else:
         return render(request, template)
+```
+8. Under `Views.py` add the Base URL and API KEY as
+```url='http://api.currencylayer.com/'
+key=<API_KEY>
 ```

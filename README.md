@@ -6,7 +6,7 @@ http://api.currencylayer.com/
 
 Using [Django](https://www.djangoproject.com/)'s Python web framework, I will expose the API functionality to users. Users should be able to select a source currency, enter an amount and select a destination currency. The app should then convert the amount to the destination currency and display the converted amount.
 
-My solution can be found in the following website: https://simplecurrency.onrender.com
+My solution can be found in the following website: https://currencyconverter.onrender.com
 
 # Steps of my code solution - Django framework
 
@@ -128,7 +128,12 @@ git remote add origin https://github.com/<your-github-username>/<github-reposito
 
 d) Git will track changes to this directory. Any time that we want to make changes within the directory and we want to deploy our code to GitHub, we will follow these commands
 ```
+git checkout main
 git add .
-git commit -m "First commit"
+git commit -m "message of the commit"
 git push -u origin main
 ```
+
+### Hosting on Render ###
+
+We will be hosting our Django project on [Render](https://dashboard.render.com/). We can sign up with our GitHub account and select a New Web Service for our code repository. When creating the New Web Service, we need to add `cd converter && gunicorn currency_converter.wsgi:application` to `Start Command`. Then, any change to the files in the GitHub repository will be deployed automatically to our web page https://currencyconverter.onrender.com. 

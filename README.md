@@ -136,4 +136,4 @@ git push -u origin main
 
 ### Hosting on Render ###
 
-We will be hosting our Django project on [Render](https://dashboard.render.com/). We can sign up with our GitHub account and select a New Web Service for our code repository. When creating the New Web Service, we need to add `gunicorn currency_converter.wsgi` to `Start Command`. Then, any change to the files in the GitHub repository will be deployed automatically to our web page https://currencyconverter.onrender.com. 
+We will be hosting our Django project on [Render](https://dashboard.render.com/). We can sign up with our GitHub account and select a New Web Service for our code repository. When creating the New Web Service, we need to add `gunicorn currency_converter.wsgi` to the `Start Command`. Then, any change to the files in the GitHub repository will be deployed automatically to our web page https://currencyconverter.onrender.com. 

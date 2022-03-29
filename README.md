@@ -99,7 +99,7 @@ key=<API_KEY>
 ```
 9. Under the app folder `converter`, add the folder `templates`.
 10. Within `templates` add two files: `base.html` & `index.html`. These files (attached to the repository) contain the basic structure of the web page and the application's entry point.
-11. Under `urls.py` we will have
+11. Under `urls.py` we will have:
 ```
 urlpatterns = [
     # admin panel url

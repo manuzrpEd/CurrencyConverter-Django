@@ -118,7 +118,7 @@ a) Create a new repository in [GitHub](https://github.com/).
 
 b) Install [Git](https://git-scm.com/).
 
-c) In the `currency` directory, run
+c) In the `currency` directory, run:
 ```
 git init
 git config --global user.name "Your Name"
@@ -126,7 +126,7 @@ git config --global user.email you@example.com
 git remote add origin https://github.com/<your-github-username>/<github-repository-name>.git
 ```
 
-d) Git will track changes to this directory. Any time that we want to make changes within the directory and we want to deploy our code to GitHub, we will follow these commands
+d) Git will track changes to the `currency` directory. Any time that we want to make changes within the directory and we want to deploy our code to GitHub, we will follow these commands:
 ```
 git checkout main
 git add .

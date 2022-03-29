@@ -34,4 +34,6 @@ Now we are in a position to start our Django project. Execute the command `djang
 
 At this point, we have created all files and directories needed for our project/application. Using a Code editor, we can modify the files of our project/app to our particular needs. I use [Visual Studio Code](https://code.visualstudio.com/).
 
-* In the `settings.py` file, we need to add `converter` in the list of `INSTALLED_APPS`.
+1. In the `settings.py` file, we need to add `converter` in the list of `INSTALLED_APPS`.
+2. Create a `.env` file at the root of the project.
+3. Execute `python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"` and add `SECRET_KEY=<YOUR DJANGO PROJECT SECRET KEY>` to the `.env` file created.

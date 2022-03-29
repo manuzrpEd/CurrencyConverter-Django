@@ -114,9 +114,9 @@ urlpatterns = [
 
 ### Deploy ###
 
-a) Create a new repository in [GitHub](https://github.com/)
+a) Create a new repository in [GitHub](https://github.com/).
 
-b) Install [Git](https://git-scm.com/)
+b) Install [Git](https://git-scm.com/).
 
 c) In the `currency` directory, run
 ```

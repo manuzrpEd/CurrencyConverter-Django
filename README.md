@@ -93,6 +93,21 @@ def index(request):
         return render(request, template)
 ```
 8. Under `Views.py` add the Base URL and API KEY as
-```url='http://api.currencylayer.com/'
+```
+url='http://api.currencylayer.com/'
 key=<API_KEY>
 ```
+9. Under the app folder `converter`, add the folder `templates`.
+10. Within `templates` add two files: `base.html` & `index.html`. These files (attached to the repository) contain the basic structure of the web page and the application's entry point.
+11. Under `urls.py` we will have
+```
+urlpatterns = [
+    # admin panel url
+    path('admin/', admin.site.urls),
+    # index page url
+    path('', views.index, name="index")
+    ]
+```
+12. Add a `.gitignore` file in the base of the directory
+13. Execute `python manage.py migrate`
+14. Run `python manage.py runserver` and now we should be able to go to `http://127.0.0.1:8000/` to view the site.

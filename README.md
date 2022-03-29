@@ -37,7 +37,7 @@ At this point, we have created all files and directories needed for our project/
 1. In the `settings.py` file, we need to add `converter` in the list of `INSTALLED_APPS`.
 2. Add `ALLOWED_HOSTS = ['127.0.0.1','currencyconverter.onrender.com']` to `settings.py` file.
 3. Create a `.env` file at the root of the project.
-4. Execute `python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"` and add `SECRET_KEY=<YOUR DJANGO PROJECT SECRET KEY>` to the `.env` file created.
+4. Execute `python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"` and add the printed key as `SECRET_KEY=<YOUR DJANGO PROJECT SECRET KEY>` to the `.env` file created.
 5. Add `SECRET_KEY = str(os.getenv('SECRET_KEY'))` to `settings.py` file.
 6. Add `USE_THOUSAND_SEPARATOR = True` to `settings.py` file.
 7. Under `Views.py`, define the function responsible for handling the currency exchange:

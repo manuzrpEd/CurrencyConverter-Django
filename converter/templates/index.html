@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+ 
+{% block content %}
+<!-- enter text to granlate area -->
+<div class="col-sm-6">
+   <div class="card">
+       <!-- <div class="card-header" style="background-color: #028fa8;"> -->
+           <h4 class="card-title text-light">Fill the Details to convert</h4>
+       <!-- </div> -->
+       <div class="card-body">
+           <form action="{% url 'index' %}" method="POST">
+               {% csrf_token %}
+               <div class="form-group">
+                   <label for="format">From Currency:</label>
+                   <select class="form-control" name="currency1">
+                       <option value="AUD" selected>AUD</option>
+                       <option value="CNY" selected>CNY</option>
+                       <option value="GBP" selected>GBP</option>
+                       <option value="EUR" selected>EUR</option>
+                       <option value="USD" selected>USD</option>
+                       <option value="UYU" selected>UYU</option>
+                       <option value="VND" selected>VND</option>
+                       <option value="ZAR" selected>ZAR</option>
+                   </select><br>
+                   <label for="format">To Currency:</label>
+                   <select class="form-control" name="currency2">
+                       <option value="AED" selected>AED</option>
+                       <option value="ARS" selected>ARS</option>
+                       <option value="AUD" selected>AUD</option>
+                       <option value="CNY" selected>CNY</option>
+                       <option value="EUR" selected>EUR</option>
+                       <option value="GBP" selected>GBP</option>
+                       <option value="USD" selected >USD</option>                       
+                   </select>
+               </div>
+               <br>
+               <div class="form-group">
+                   <label for="exampleFormControlTextarea1">Enter Amount From Currency</label>
+                   <input class="form-control" id="amount-one" name="amount" value="0" rows="5"></input>
+               </div>
+                </br>
+               <button type="submit" class="btn btn-primary">Submit</button>
+           </form>
+           <h4 class="card-title text-light">Result: {{ status }}</h4>
+           <div id="rate" style="text-align-last: left; font-size: 16px; font-weight:900">
+                {{pair}} Conversion Rate: {{ rate }}
+           </div>
+       </div>
+   </div>
+</div>
+
+<!-- Transtalated text area -->
+<div class="col-sm-6">
+   <div class="card">
+       <div class="card-header bg-primary">
+        <h4 class="card-title text-light">Amount Entered ({{currency1}}): {{ amt_entered }}</h4>
+        <h4 class="card-title text-light">Equivalent Amount ({{currency2}}):</h4>
+       </div>
+       <div class="card-body">  
+           <!-- Notice how we bring in the response data sent as we render the same page by the request -->
+           <textarea class="form-control "name="translated" id="translated" cols="15" rows="2" style="text-align-last: right; font-size: 30px; font-weight:900">
+                   {{ amount }}                              
+           </textarea>                  
+       </div>
+   </div>
+   Visit <a href="https://github.com/manuzrpEd/CurrencyConverter">Github</a>'s repository code.
+</div>
+
+
+
+{% endblock %}

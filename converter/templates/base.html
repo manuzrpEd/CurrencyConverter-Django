@@ -1,0 +1,20 @@
+<!-- Nvaigation bar -->
+<nav class="navbar navbar-expand-lg navbar navbar-dark" style="background-color: #028fa8;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'index' %}">HOME</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            </ul>
+        </div>
+    </div>
+</nav>
+Use this web application to convert an amount from one currency to another. Data is provided by <a href="https://currencylayer.com/">Currencylayer</a>.
+
+<!-- container -->
+<div class="container">
+    <div class="row">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+</div>
